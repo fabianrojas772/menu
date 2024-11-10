@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color_primario:#d5ffc8;
+    --color_secundario:#a8a6a6;
+    --color_blanco:#ffffff;
+    --color_negro:#0e3910;
+    --tamaño_fuente:18px;
+    --maximo__ancho:1200px;
+    --alto__nav:70px;
+}
+
+::selection{
+    background-color: var(--color_primario);
+    color: var(--color_secundario);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: var(--tamaño_fuente);
+    background-color: var(--color_secundario);
+}
+
+header{
+    background-color: var(--color_primario);
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+section{
+    height: calc(100vh - var(--alto__nav));
+}
+
+.contenedor{
+    width: 100%;
+    max-width: var(--maximo__ancho);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.nav{
+    /**/
+}
+
+.nav__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoa{
+    width: 145px;
+    height: 80px;
+    
+}
+
+.nav__lista{
+    list-style: none;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: var(--color_secundario);
+    font-weight: bold;
+}
+
+.coffee{
+    width: 450px;
+    height: 400px;
+}
+
+/**-----------------------
+-------Principal----------
+-----------------------**/
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h-100{
+    height: calc(100vh - var(--alto__nav));
+}
+
+.coffee {
+    order: 1;
+    flex-basis: 35%;
+}
+
+.contenedor-textos{
+    order: 0;
+    flex-basis: 45%;
+}
+
+.titulo{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.parrafo{
+    margin: 20px 0;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--color_primario);
+    color: var(--color_secundario);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 16px 16px;
+    border-radius: 30px;
+}
+.btn--negro{
+    background-color: var(--color_primario);
+    color: var(--color_negro);
+}
+
+/**-----------------------
+-------Nosotros-----------
+-----------------------**/
+
+.secundario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h-100{
+    height: calc(100vh - var(--alto__nav));
+}
+.imagedos{
+    flex-basis: 40%;
+    width: 450px;
+    height: 450px;
+}
+
+.contenedor-textos{
+    order: 0;
+    flex-basis: 45%;
+}
+
+.titulo{
+    font-size: 48px;
+    font-weight: 700;
+}
+.parrafo{
+    margin: 20px 0;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+/**-----------------------
+--------Servicios---------
+-----------------------**/
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card__item{
+    max-width: 350px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+    background-color: var(--color_blanco);
+    color: var(--color_secundario);
+    padding: 40px;
+    border-radius: 10px;
+}
+.card__item--activo{
+    background-color: var(--color_negro);
+    color: var(--color_blanco);
+}
+
+.card__plan{
+    margin-bottom: 20px;
+}
+
+.card__precio{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.card__caracteristica{
+    margin-bottom: 25px;
+}
+
+/**-----------------------
+---------Galeria----------
+-----------------------**/
